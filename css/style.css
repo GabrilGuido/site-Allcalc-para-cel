@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2b1055;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h4 {
+  color: white;
+}
+
+h1 {
+  font: 700 1.5rem 'Poppins', sans-serif;
+}
+
+img {
+  width: 2.5rem;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+}
+
+/*============HEADER============*/
+#header {
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 1rem black;
+}
+
+#header nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#header h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+#header img {
+  width: 2.5rem;
+  height: auto;
+}
+
+/*============CONTAINER===========*/
+#container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*============BARRA PESQUISA===========*/
+#caixa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.caixa-pesquisa {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.caixa-pesquisa img {
+  position: absolute;
+  right: 2%;
+  width: 2rem;
+  height: auto;
+}
+
+.pesquisa {
+  font: 600 1rem 'Poppins', sans-serif;
+  text-align: center;
+  background: #2b1055;
+  border: 0.0625rem solid white;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.1rem white;
+  width: 22rem;
+  height: 2rem;
+  color: white;
+}
+
+/*===============caixa padrao para todas calcs===========*/
+#section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculadora {
+  width: 20.4375rem;
+  margin: 1rem 0;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.1rem white;
+}
+
+.titulo-calc {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.calculadora section {
+  width: 20rem;
+  background: #38156e;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/*=============SELETORA DE CALC ARITIMETCO======================*/
+#seletor {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+
+#seletor button {
+  font: 700 0.7rem 'Poppins', sans-serif;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.1rem black;
+}
+
+/*=================PROGRESSAO ARITIMETICA========================*/
+.calc_aritimetica_sequencia input,
+.button {
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+#calcular,
+.button {
+  width: 5rem;
+}
+
+#result,
+#result-termogeral,
+#result-soma {
+  color: white;
+}
+
+#calc_aritimetica_soma,
+#calc_aritimetica_termogeral,
+#calc_aritimetica_sequencia {
+  display: none;
+}
+
+/*=================PROGRESSAO SOMA========================*/
+#calc_aritimetica_soma img {
+  width: 60%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+/*=================PROGRESSAO SOMA========================*/
+#calc_aritimetica_termogeral img {
+  width: 70%;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}

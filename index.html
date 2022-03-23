@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLCALC</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+    <script defer src="/js/scriptseq.js"></script> 
+    <script defer src="/js/scriptsoma.js"></script>
+    <script defer src="/js/scriptterm.js"></script>
+</head>
+<body>
+<!--=======HEADER========-->
+
+    <header id="header">
+    <nav .infos-header>
+        <img src="/img/Header/calculator_icon-icons.com_53152.png" alt="">
+        <div class="titulo">
+            <h1>ALLCALC</h1>
+        </div>
+        <a href="#">
+            <img src="/img/Header/account_avatar_face_man_people_profile_user_icon_123197.png" alt="">
+        </a>
+    </nav>
+    </header>
+
+        
+<!--==========CONTAINER==============-->
+<div id="container">
+
+
+ <!--=============CAIXA DE INFOS===========-->
+<main>
+ <section id="section">
+    <div id="caixa">
+     <div class="caixa-pesquisa">
+         <input class="pesquisa" type="text" placeholder="Pesquise aqui sua conta">
+         <a><img src="/img/Pesquisa/mais.png" alt=""></a>  
+     </div> 
+    </div>
+    
+        <div class="calculadora">
+        <div class="titulo-calc">
+            <h1>Progressão aritmética</h1>
+        </div>
+        <section>
+            <div id="seletor">
+               <button id="botao-sequencia" class="bseletor">Sequência</button>
+               <button id="botao-termogeral" class="bseletor">Termo Geral</button>
+               <button id="botao-soma" class="bseletor">Soma</button></a>
+            </div>        
+        </section>
+        
+    </div><!--ESCOLHA DE ARITIMETICA-->
+
+        
+    <div class="calculadora" id="calc_aritimetica_sequencia">
+        <div class="titulo-calc">
+            <h1>Progressão aritmética Sequência</h1>
+        </div>
+        <section>
+            <div class="calc_aritimetica_sequencia">
+                <h4>A<sub>1</sub>:</h4> <input type="text" name="A1" id="a1" placeholder="Termo inicial" class="input"> <br>
+                <h4>R:</h4> <input type="text" name="R" id="r" placeholder="Razão" class="input"><br>
+                <h4>Número de termos:</h4> <input type="text" name="final" id="final" placeholder="Termo final" class="input"><br>
+                <input type="button" value="Calcular" id="calcular" onclick="calcular()">
+            </div>
+            
+        <div id="result"><b>Resultado:</b> </div>
+        </section>
+        
+    </div><!--ARITIMETICA SEQUENCIA-->        
+
+        
+    <div class="calculadora" id="calc_aritimetica_termogeral">
+        
+        <div class="titulo-calc">
+            <h1>Progressão aritmética Termo Geral</h1>
+            <img src="img/PA/termo_geral_pa.png" alt="Termo geral PA">
+
+        </div>
+        <section>
+            <div class="calc_aritimetica_sequencia">
+                <h4>A<sub>n</sub>:</h4> <input type="text" name="An" id="an-termogeral" placeholder="Termo na posição N" class="input"> <br>
+                <h4>A<sub>1</sub>:</h4> <input type="text" name="A1" id="A1-termogeral" placeholder="Termo inicial" class="input"><br>
+                <h4>N:</h4> <input type="text" name="N" id="n-termogeral" placeholder="Posição do termo" class="input"><br>
+                <h4>R:</h4> <input type="text" name="R" id="R-termogeral" placeholder="Razão" class="input"><br>
+                <input type="button" value="Calcular" id="calcular-termogeral" onclick="calcularTermoGeral()">
+            </div>
+            
+        <div id="result-termogeral"><b>Resultado:</b> </div>
+        </section>
+        
+    </div><!--TERMO GERAL-->        
+
+
+    <div class="calculadora" id="calc_aritimetica_soma">
+        
+        <div class="titulo-calc">
+            <h1>Progressão aritmética Soma</h1>
+            <img src="img/PA/PA_soma.png" alt="Termo geral PA">
+
+        </div>
+        <section>
+            <div class="calc_aritimetica_sequencia">
+                <h4>S<sub>n</sub>:</h4> <input type="text" name="Sn" id="sn" placeholder="Soma dos termos" class="input"> <br>
+                <h4>A<sub>1</sub></h4> <input type="text" name=A1" id="a1-soma" placeholder="Termo inicial" class="input"><br>
+                <h4>A<sub>n</sub></h4> <input type="text" name="An" id="an-soma" placeholder="Termo na posição n" class="input"><br>
+                <h4>N:</h4><input type="text" name="N" id="n-soma" placeholder="Posição do termo" class="input">
+                <input type="button" value="Calcular" id="calcular-soma" onclick="calcularSoma()">
+            </div>
+            
+        <div id="result-soma"><b>Resultado:</b> </div>
+        </section>
+        
+    </div><!--SOMA-->            
+
+
+    <div class="calculadora">
+        <div class="titulo-calc">
+            <h1>Progressão </h1>
+        </div>
+        <section>
+            <h4>Início:</h4> <input type="text" name="inicio" id="inicio"> 
+            <h4>Fim:</h4><input type="text" name="fim" id="fim">
+            <h4>Passo:</h4><input type="text" name="passo" id="passo"><br>
+            <input class="button" type="button" value="Contar" onclick="conta()">
+        <div id="resultado"></div>
+        </section>
+        
+    </div>  
+ </section>          
+</main>
+           
+
+       
+</div> 
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
