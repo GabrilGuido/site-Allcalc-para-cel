@@ -33,9 +33,6 @@ button {
   cursor: pointer;
 }
 
-:root {
-}
-
 /*============HEADER============*/
 #header {
   border-bottom: 1px solid black;
@@ -138,7 +135,8 @@ footer {
 }
 
 /*=============SELETORA DE CALC ARITIMETCO======================*/
-#seletor {
+#seletor,
+#seletor-geometrica {
   height: 2rem;
   display: flex;
   flex-direction: row;
@@ -146,7 +144,8 @@ footer {
   padding: 0 1rem;
 }
 
-#seletor button {
+#seletor button,
+#seletor-geometrica button {
   font: 700 0.7rem 'Poppins', sans-serif;
   padding: 0.5rem;
   text-align: center;
@@ -184,7 +183,7 @@ footer {
   display: none;
 }
 
-/*=================PROGRESSAO SOMA========================*/
+/*=================PROGRESSAO ARITIMETICA SOMA========================*/
 #calc_aritimetica_soma img {
   width: 60%;
   height: auto;
@@ -192,10 +191,23 @@ footer {
   margin: 0.5rem;
 }
 
-/*=================PROGRESSAO SOMA========================*/
+/*=================PROGRESSAO ARITIMETICA TERMO GERAL========================*/
 #calc_aritimetica_termogeral img {
   width: 70%;
   height: auto;
   margin: 0.5rem;
   border-radius: 0.5rem;
+}
+
+/*=================PROGRESSAO GEOMETRICA========================*/
+#result-termogeral-geometrica,
+#result-sequencia-geometrica,
+#result-soma-geometrica {
+  color: white;
+}
+
+#calc_geometrica_termogeral img {
+  width: 60%;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
 }

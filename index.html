@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALLCALC</title>
     <link rel="stylesheet" href="/css/style.css" type="text/css"> 
-    <script defer src="/js/scriptseq.js"></script> 
-    <script defer src="/js/scriptsoma.js"></script>
-    <script defer src="/js/scriptterm.js"></script>
+    <script defer src="/js/PA/scripts.js"></script>
+    <script defer src="/js/PA/scriptseq.js"></script> 
+    <script defer src="/js/PA/scriptsoma.js"></script>
+    <script defer src="/js/PA/scriptterm.js"></script>
+    <!--script PA-->
+    <script defer src="/js/PG/scripts.js"></script>
+    <script defer src="/js/PG/scriptseq.js"></script>
 </head>
 <body>
 <!--=======HEADER========-->
@@ -52,7 +56,7 @@
             </div>        
         </section>
         
-    </div><!--ESCOLHA DE ARITIMETICA-->
+    </div><!--ESCOLHA DE ARITIMETICA PA-->
 
         
     <div class="calculadora" id="calc_aritimetica_sequencia">
@@ -117,6 +121,76 @@
     </div><!--SOMA-->            
 
 
+    
+
+    <div class="calculadora">
+        <div class="titulo-calc">
+            <h1>Progressão Geométrica</h1>
+        </div>
+        <section>
+            <div id="seletor-geometrica">
+               <button id="botao-sequencia-geometrica" class="bseletor">Sequência</button>
+               <button id="botao-termogeral-geometrica" class="bseletor">Termo Geral</button>
+               <button id="botao-soma-geometrica" class="bseletor">Soma</button></a>
+            </div>        
+        </section>
+        
+    </div><!--ESCOLHA DE ARITIMETICA PG-->
+
+    <div class="calculadora" id="calc_geometrica_sequencia">
+        <div class="titulo-calc">
+            <h1>Progressão Geométrica Sequência</h1>
+        </div>
+        <section>
+            <div class="calc_aritimetica_sequencia">
+                <h4>A<sub>1</sub>:</h4> <input type="text" name="A1" id="a1-sequencia-geometrica" placeholder="Termo inicial" class="input"> <br>
+                <h4>Q:</h4> <input type="text" name="Q" id="q-sequencia-geometrica" placeholder="Razão" class="input"><br>
+                <h4>N:</h4> <input type="text" name="N" id="n-sequencia-geometrica" placeholder="Número determos" class="input"><br>
+                <input type="button" value="Calcular" id="calcular-sequencia-geometrica" onclick="calcularPGSequencia()">
+            </div>
+            
+        <div id="result-sequencia-geometrica"><b>Resultado:</b> </div>
+        </section>
+        
+    </div><!--GEOMETRICA SEQUENCIA-->   
+    
+    <div class="calculadora" id="calc_geometrica_termogeral">
+        
+        <div class="titulo-calc">
+            <h1>Progressão aritmética Termo Geral</h1>
+            <img src="img/PG/PG_termo_geral.png" alt="Termo geral PA">
+
+        </div>
+        <section>
+            <div class="calc_aritimetica_sequencia">
+                <h4>A<sub>n</sub>:</h4> <input type="text" name="An" id="an-termogeral-geometrica" placeholder="Termo na posição N" class="input"> <br>
+                <h4>A<sub>1</sub>:</h4> <input type="text" name="A1" id="a1-termogeral-geometrica" placeholder="Termo inicial" class="input"><br>
+                <h4>N:</h4> <input type="text" name="N" id="n-termogeral-geometrica" placeholder="Posição do termo" class="input"><br>
+                <h4>Q:</h4> <input type="text" name="Q" id="q-termogeral-geometrica" placeholder="Razão" class="input"><br>
+                <input type="button" value="Calcular" id="calcular-termogeral" onclick="calcularTermoGeral()">
+            </div>
+            
+        <div id="result-termogeral-geometrica"><b>Resultado:</b> </div>
+        </section>
+        
+    </div><!--GEOMETRICA TERMO GERAL-->    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="calculadora">
         <div class="titulo-calc">
             <h1>Progressão </h1>
@@ -130,12 +204,14 @@
         </section>
         
     </div>  
- </section>          
+  
+    
+</section>          
 </main>
-           
 
-       
+
+
 </div> 
-    <script src="/js/scripts.js"></script>
+
 </body>
 </html>
