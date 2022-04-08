@@ -211,3 +211,7 @@ footer {
   border-radius: 0.5rem;
   margin: 0.5rem;
 }
+
+#calc_geometrica_sequencia, #calc_geometrica_termogeral{
+  display: none;
+}
